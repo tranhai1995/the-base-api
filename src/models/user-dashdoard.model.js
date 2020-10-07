@@ -6,7 +6,7 @@ module.exports = function (app) {
   const schema = new mongooseClient.Schema(
     {
       userId: { type: Schema.Types.ObjectId, ref: 'users', require: true },
-      roomId: { type: Schema.Types.ObjectId, ref: 'dashboard', require: true },
+      shopId: { type: Schema.Types.ObjectId, ref: 'shops', require: true },
       deletedAt: { type: Schema.Types.Date, default: null },
       socketId: { type: Schema.Types.String, require: true },
     },
