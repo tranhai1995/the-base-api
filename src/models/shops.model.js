@@ -9,7 +9,8 @@ module.exports = function (app) {
   const { Schema } = mongooseClient
   const schema = new Schema(
     {
-      shopUrl: { type: String },
+      domain: { type: String },
+      topLvDomain: { type: String },
       shopName: { type: String },
       address: { type: String },
       description: { type: String },
